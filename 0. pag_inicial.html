@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="0. estilos.css">
+    <script src="imagenes.js">
+    </script>
+</head>
+<body>
+    <div class="web" id="miweb">
+        <div class="menu">
+            <a href="#" class="home"><img src="adj/casa.png" alt="Inicio" width="35px"></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="adj/capas.png" class="menu-icono" alt="Navegacion" width="35px" />
+
+            </label>
+
+        <nav>
+            <ul>
+                <li><a href="#intro">Introducción</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#funciones">Servicios y promociones</a></li>
+                <li><a href="#opinion">Reseñas</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+
+<header id="banner">
+        <div class="header-contenido contenedor">
+            <h1>GESTIÓN DE DATOS PARA UNA CADENA DE TIENDAS DE COSMÉTICOS</h1>
+            <p>Potencia tu Tienda de Cosméticos con Inteligencia de Datos</p>
+        </div>
+
+        <div>
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miMenu" aria-controls="miMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="miMenu">
+                    <ul class=" navbar-nav nav">
+                        <li class="nav-item">
+                            <a href="#seccion1" id="inicio" class="nav-link">Nuestra Base de Datos</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a href="#" id="submenu" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conócenos</a>
+                            <div class="dropdown-menu" aria-labelledby="submenu" id="elementos_submenu">
+                                <form name="f_submenu" id="f_submenu">
+                                    <input type="text" name="tienda" id="tienda" hidden>
+                                    <input type="button" value="Tienda" name="Tienda"
+                                        class="dropdown-item" id="drop1">
+
+                                    <input type="text" name="proveedores" id="proveedores" hidden>
+                                    <input type="button" value="Proveedores" name="Proveedores" class="dropdown-item"
+                                        id="drop2">
+
+                                    <input type="text" name="empleados" id="empleados" hidden>
+                                    <input type="button" value="Empleados" name="Empleados"
+                                        class="dropdown-item" id="drop3">
+
+                                    <input type="text" name="profesionales" id="profesionales" hidden>
+                                    <input type="button" value="Profesionales" name="Profesionales"
+                                    class="dropdown-item" id="drop4">
+                                </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <script src="2. script1.js"></script>
+
+
+    <section id="intro">
+        <div class="contenedor">
+            <h2>Introducción</h2>
+            <p> En un mercado cada vez más competitivo y orientado al cliente, la gestión eficiente de la información es fundamental para el éxito de cualquier negocio. Este proyecto presenta una plataforma web diseñada para una cadena de tiendas de cosméticos, con el objetivo de optimizar la organización, visualización y manejo de datos clave relacionados con productos, clientes, empleados, proveedores y servicios.</p>
+            <p>Este proyecto ha sido desarrollado en el marco de la asignatura de <strong>Bases de Datos</strong>, con el propósito de aplicar de forma práctica los conocimientos adquiridos durante el segundo cuatrimestre del curso. La propuesta consiste en el diseño e implementación de una plataforma web orientada a la gestión de datos para una cadena de tiendas de cosméticos, integrando aspectos clave como la organización de productos, la interacción con clientes y la administración de servicios.</p>
+            <p>A lo largo del desarrollo del trabajo se han puesto en práctica los fundamentos de <strong>HTML, CSS, JavaScript y PHP</strong>, tecnologías vistas durante el cuatrimestre y que permiten construir aplicaciones dinámicas e interactivas. En concreto, se ha diseñado una interfaz intuitiva y funcional que permite al usuario buscar productos, explorar distintas categorías, acceder a servicios y promociones, así como enviar y consultar reseñas de clientes.</p>
+            <p>Este sistema simula un entorno real de gestión comercial, donde la información está interconectada y puede ser consultada y manipulada de manera eficiente. Con ello, se demuestra no solo el dominio técnico de las herramientas aprendidas, sino también la capacidad para aplicarlas en el desarrollo de soluciones prácticas y útiles en el contexto de una aplicación web con base de datos.</p>
+        </div>
+    </section>
+
+    
+
+    <section id="productos">
+        <div class="productos-cont contenedor">
+            <h2>Nuestros productos</h2>
+
+
+            <div class="buscador">
+                <form action="1. buscador.php">
+                    <label for="control">Buscar por</label>
+                    <select name="control" id="control">
+                        <option value="nombre">Nombre</option>
+                        <option value="marca">Marca</option>
+                        <option value="tipo_piel_cabello">Tipo piel/cabello</option>
+                    </select>
+                    <input type="text" id="query" name = "query" placeholder="Ingrese su busqueda...">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+
+            <div class="articulos">
+                <div class="categoria">
+                    <form action="1. categorias.php" method="post" name="f1">
+                        <input type="submit" value="Perfume" name="Perfumes" class="boton_prod">
+                    </form>
+                </div>
+
+                <div class="categoria">
+                    <form action="1. categorias.php" method="post" name="f1">
+                        <input type="submit" value="Maquillaje" name="Maquillaje" class="boton_prod">
+                    </form>
+                </div>
+
+                <div class="categoria">
+                    <form action="1. categorias.php" method="post" name="f1">
+                        <input type="submit" value="Cuidado corporal" name="Corporal" class="boton_prod">
+                    </form>
+                </div>
+
+                <div class="categoria">
+                    <form action="1. categorias.php" method="post" name="f1">
+                        <input type="submit" value="Cuidado facial" name="Facial" class="boton_prod">
+                    </form>
+                </div>
+
+                <div class="categoria">
+                    <form action="1. categorias.php" method="post" name="f1">
+                        <input type="submit" value="Cuidado capilar" name="Cabello" class="boton_prod">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="funciones">
+        <div class="funciones-cont contenedor">
+            <h2>Atenciones Especiales para Ti</h2>
+            <div class="funciones">
+                
+                <div id="servicios">
+                    <a href="0. servicios.html"><img src="adj/servicios.png" alt="" width="150px"></a>
+                    <h5>Servicios</h5>
+
+                </div>
+                <div id="promociones">
+                    <a href="1. promociones.php"><img src="adj/promociones.png" alt="" width="150px"></a>
+                    <h5>Promociones</h5>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <section id="opinion">
+        <div class="contenedor">
+            <h2>Reseñas</h2>
+            <h3>¡Nos encantaría conocer vuestra opinión! Deja una reseña y ayúdanos a mejorar</h3>
+
+        <div>
+            <form id="formulario-opinion" action="1. codigos.php" method="post">
+                <div class="mb-3 row">
+                <label for="buscador-producto" class="col-lg-2 col-form-label">Buscar producto:</label>
+                <div class="col-lg-4">
+                <input class="form-control" type="text" id="buscador-producto" placeholder="Escribe para buscar...">
+                </div>
+
+                <label for="producto" class="col-lg-2 col-form-label">Producto:</label>
+                <div class="col-lg-4">
+                <select class="form-control" id="producto" name="producto" onchange="rellenarCodigo()">
+                    <option value="" disabled selected>Selecciona un producto</option>
+                </select>
+                </div>
+                </div>
+                
+                <div class="mb-3 row">
+                <label for="codigo_producto" class="col-lg-2 col-form-label">Código del producto:</label>
+                <div class="col-lg-4">
+                <input type="text" id="codigo_producto" name="codigo_producto" readonly class="form-control">
+                </div>
+                <label for="cliente" class="col-lg-2 col-form-label">Cliente (DNI):</label>
+                <div class="col-lg-4">
+                    <input type="text" id="cliente" name="cliente"  pattern="\d{8}[A-Za-z]" class="form-control">
+                </div>
+                </div>
+                
+                <div class="mb-3 row">
+                <label for="puntuacion" class="col-lg-1 col-form-label">Puntuación:</label>
+                <div class="col-lg-2">
+                    <select id="puntuacion" name="puntuacion" class="form-control">
+                        <option value="" disabled selected>Selecciona</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                
+                <label for="comentario" class="col-lg-1 col-form-label">Comentario:</label>
+                <div class="col-lg-8">
+                <input type="text" id="comentario" name="comentario" placeholder="Escribe tu comentario aquí..." class="form-control">
+                </div>
+            </div>
+                <div class="mb-3 row">
+                    <div class="col-lg-2  d-flex justify-content-center container ">
+                    
+                    <input type="submit" value="Insertar" name="accion" class="btn btn-primary ms-2" onclick="alert('Insertar reseña')">
+                    <input type="submit" value="Actualizar" name="accion"
+                    class="btn btn-warning ms-2" onclick="alert('Actualizar reseña')">
+                    <input type="submit" value="Eliminar" name="accion"
+                    class="btn btn-danger ms-2" onclick="alert('Eliminar reseña')"">
+                    </div>
+                </div>
+                </form>
+                    
+                <script src="2. codigos.js"></script>
+        </div>
+
+        
+
+        <h3>¡Echa un vistazo a las opiniones de otros clientes!</h3>
+
+        <div class="puntuacion">
+            <label for="filtro-puntuacion">Filtrar por puntuación:</label>
+            <select id="filtro-puntuacion" name="filtro-puntuacion">
+                <option value="" selected>Todos</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <input type="button" id="consultar-opiniones" class="boton_opinion btn btn-success" value="Consultar">
+
+        </div>
+        <div id="resultado-opiniones"></div>
+        <script src="2. opiniones.js"></script>
+        </div>
+    </section>
+
+    <footer>
+
+        <div>
+            <a href="https://www.us.es/" target="_blank">Universidad de Sevilla</a>
+            <a href="https://matematicas.us.es/" target="_blank">Facultad de Matemáticas</a>
+            <a href="https://www.cs.us.es/~lvalencia/" target="_blank">Web de la asigntura </a>
+        </div>
+
+        <p>&copy;Alicia Casaux Vázquez</p>
+    </footer>
+</body>
+</html>
