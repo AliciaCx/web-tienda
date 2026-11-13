@@ -69,7 +69,7 @@ La aplicación está diseñada para ejecutarse en un entorno local mediante XAMP
 1. Instalar y abrir XAMPP.
 2. Iniciar los servicios Apache y MySQL.
 3. Copiar la carpeta del proyecto dentro del directorio `htdocs`.
-4. Acceder a phpMyAdmin e importar el archivo SQL de la base de datos.
+4. Acceder a phpMyAdmin e importar el archivo tienda_BD.sql, situado en la carpeta adj del proyecto.
 5. Configurar los datos de conexión a la base de datos en los archivos correspondientes.
 6. Abrir el navegador y acceder a:
 
